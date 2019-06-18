@@ -39,8 +39,10 @@ public class Calculator implements Serializable {
 		// Event handler for + or -
 		if (operation == '+' || operation == '-') {
 			System.out.println(performOperation());
+			return;
 		} else {
 			System.out.println("The operation must either be '+' or '-'. Please try again!");
+			return;
 		}
 	}
 	
